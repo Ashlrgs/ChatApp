@@ -8,16 +8,14 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 // Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyA5BpZDdZ8yv8hVU2JtMSF71uIznJuFrzU",
-  authDomain: "chatappp-c15e6.firebaseapp.com",
-  databaseURL: "https://chatappp-c15e6-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "chatappp-c15e6",
-  storageBucket: "chatappp-c15e6.appspot.com",
-  messagingSenderId: "821468280586",
-  appId: "1:821468280586:web:5868f6493280f6b1e9acf3",
-  measurementId: "G-MN3ZHGSQKF"
-};
+firebase.initializeApp({
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  databaseURL: "YOUR_DATABASE_URL",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_SENDER_ID"
+});
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
